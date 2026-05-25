@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "concurrently \"next dev -p 3000\" \"npm --prefix backend run server\"",
+    "dev": "concurrently \"next dev -p 3000\" \"json-server --watch db.json --port 3001\"",
     "build": "next build",
     "start": "next start",
-    "server": "npm --prefix backend run server"
+    "server": "json-server --watch db.json --port 3001"
   },
   "dependencies": {
     "next": "14.2.3",
